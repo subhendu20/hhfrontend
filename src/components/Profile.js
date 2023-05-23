@@ -26,7 +26,7 @@ function Profile() {
   useEffect(() => {
     setloading(false)
 
-    axios.get('http://localhost:7000/users/getdetails', {
+    axios.get('https://hhbackend.onrender.com/users/getdetails', {
       withCredentials: true
     }).then((res) => {
       console.log(res.data)
@@ -61,7 +61,7 @@ function Profile() {
     console.log('zxn')
     setpostloading(false)
 
-    axios.get('http://localhost:7000/post/ownpost', {
+    axios.get('https://hhbackend.onrender.com/post/ownpost', {
       withCredentials: true
     }).then(async (res) => {
       console.log(res.data)
@@ -98,7 +98,7 @@ function Profile() {
 
   useEffect(() => {
     setfollowloading(true)
-    axios.get(`http://localhost:7000/comment/getfollowers`, {
+    axios.get(`https://hhbackend.onrender.com/comment/getfollowers`, {
       withCredentials: true
     }).then(async (res) => {
       setfollowerlist({

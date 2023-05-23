@@ -75,7 +75,7 @@ function Editprofile() {
           
           e.preventDefault()
           console.log(formdata)
-          axios.put('http://localhost:7000/users/update', formdata, {
+          axios.put('https://hhbackend.onrender.com/users/update', formdata, {
             withCredentials: true
         }).then((res)=>{
           if(res.data==='error'){
@@ -99,7 +99,7 @@ function Editprofile() {
         useEffect(()=>{
           setloading(false)
             
-          axios.get('http://localhost:7000/users/getdetails',{
+          axios.get('https://hhbackend.onrender.com/users/getdetails',{
             withCredentials:true
         }).then((res)=>{
           console.log(res.data)

@@ -18,7 +18,7 @@ function Signup() {
           const handlesubmit=async(e)=>{
             e.preventDefault()
             console.log(formdata)
-            axios.post('http://localhost:7000/users/adduser', formdata, {
+            axios.post('https://hhbackend.onrender.com/users/adduser', formdata, {
               withCredentials: true
           }).then(async(res) => {
               console.log(res)

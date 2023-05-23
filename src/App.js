@@ -110,7 +110,7 @@ function App() {
   
     const signout=async(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:7000/users/logout', {
+      axios.post('https://hhbackend.onrender.com/users/logout', {
         withCredentials: true
     }).then(async(res)=>{
       console.log(res)
@@ -185,7 +185,7 @@ function App() {
   useEffect(()=>{
     setloading(false)
 
-    axios.get('http://localhost:7000/users/getdetails', {
+    axios.get('https://hhbackend.onrender.com/users/getdetails', {
       withCredentials: true
     }).then(async(res) => {
       console.log(res.data)
@@ -211,7 +211,7 @@ function App() {
 
   useEffect(() => {
     setfollowloading(true)
-    axios.get(`http://localhost:7000/comment/getfollows`, {
+    axios.get(`https://hhbackend.onrender.com/comment/getfollows`, {
       withCredentials: true
     }).then(async (res) => {
       setfollowerlist({

@@ -29,7 +29,7 @@ function Userprofile() {
 
           const followuser = () => {
                     if (follow === 'follow') {
-                              axios.get(`http://localhost:7000/comment/addfollow/${userId}`, {
+                              axios.get(`https://hhbackend.onrender.com/comment/addfollow/${userId}`, {
                                         withCredentials: true
                               }).then(async (res) => {
                                         console.log(res.data)
@@ -46,7 +46,7 @@ function Userprofile() {
 
                     }
                     else {
-                              axios.get(`http://localhost:7000/comment/removefollow/${userId}`, {
+                              axios.get(`https://hhbackend.onrender.com/comment/removefollow/${userId}`, {
                                         withCredentials: true
                               }).then(async (res) => {
                                         console.log(res.data)
@@ -68,7 +68,7 @@ function Userprofile() {
 
           useEffect(() => {
                     setfollowloading(true)
-                    axios.get(`http://localhost:7000/comment/followerlist/${userId}`, {
+                    axios.get(`https://hhbackend.onrender.com/comment/followerlist/${userId}`, {
                               withCredentials: true
                     }).then(async (res) => {
                               setfollowerlist({
@@ -94,7 +94,7 @@ function Userprofile() {
 
           useEffect(() => {
                     setfollowloading(true)
-                    axios.get(`http://localhost:7000/comment/followcheck/${userId}`, {
+                    axios.get(`https://hhbackend.onrender.com/comment/followcheck/${userId}`, {
                               withCredentials: true
                     }).then(async (res) => {
                               console.log(res.data)
@@ -133,7 +133,7 @@ function Userprofile() {
                     console.log({ userId })
                     setloading(false)
 
-                    axios.post('http://localhost:7000/users/getdetails', { userId }, {
+                    axios.post('https://hhbackend.onrender.com/users/getdetails', { userId }, {
                               withCredentials: true
                     }).then((res) => {
                               console.log(res.data)
@@ -173,7 +173,7 @@ function Userprofile() {
                     console.log('zxn')
                     setpostloading(false)
 
-                    axios.post('http://localhost:7000/post/postlist', { userId }, {
+                    axios.post('https://hhbackend.onrender.com/post/postlist', { userId }, {
                               withCredentials: true
                     }).then(async (res) => {
 

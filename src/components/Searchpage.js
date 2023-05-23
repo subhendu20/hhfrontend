@@ -20,7 +20,7 @@ function Searchpage() {
 
           useEffect(() => {
                     console.log(query)
-                    axios.post('http://localhost:7000/post/findpost', {query}, {
+                    axios.post('https://hhbackend.onrender.com/post/findpost', {query}, {
                               withCredentials: true
                     }).then(async (res) => {
                               setloaded(true)

@@ -47,7 +47,7 @@ function Popupwindow() {
                   const post=(e)=>{
                     e.preventDefault()
                     console.log(formdata)
-                    axios.post('http://localhost:7000/post/postnote', formdata, {
+                    axios.post('https://hhbackend.onrender.com/post/postnote', formdata, {
                       withCredentials: true
                   }).then((res)=>{
                     console.log(res)
