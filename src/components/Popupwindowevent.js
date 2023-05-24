@@ -47,7 +47,7 @@ function Popupwindowevent() {
                   const post=(e)=>{
                     e.preventDefault()
                     console.log(formdata)
-                    axios.post('https://hhbackend.onrender.com/events/addevent', formdata, {
+                    axios.post('https://helping-hand-backend.onrender.com/events/addevent', formdata, {
                       withCredentials: true
                   }).then((res)=>{
                     console.log(res)

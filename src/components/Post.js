@@ -21,7 +21,7 @@ function Post({ post }) {
                     e.preventDefault()
                     $('#message_input').val('')
                     console.log(comments)
-                    axios.post(`https://hhbackend.onrender.com/comment/addcomment/${post._id}`, comments, {
+                    axios.post(`https://helping-hand-backend.onrender.com/comment/addcomment/${post._id}`, comments, {
                               withCredentials: true
                     }).then(async(res) => {
                               console.log(res.data)
@@ -58,7 +58,7 @@ function Post({ post }) {
 
           const delete_comment=(id)=>{
                     
-                    axios.delete(`https://hhbackend.onrender.com/comment/deletecomment/${id}`,{
+                    axios.delete(`https://helping-hand-backend.onrender.com/comment/deletecomment/${id}`,{
                               withCredentials:true
                           }).then(async(res)=>{
                               console.log(res.data)
@@ -91,7 +91,7 @@ function Post({ post }) {
                     console.log('zxn')
           
                     
-                      axios.get(`https://hhbackend.onrender.com/comment/getcomment/${post._id}`,{
+                      axios.get(`https://helping-hand-backend.onrender.com/comment/getcomment/${post._id}`,{
                         withCredentials:true
                     }).then(async(res)=>{
                      

@@ -37,7 +37,7 @@ const[eventlist,seteventlist]=useState({events:[]})
     console.log('zxn')
     setgetpostloading(true)
     
-      axios.get('https://hhbackend.onrender.com/post/toppost',{
+      axios.get('https://helping-hand-backend.onrender.com/post/toppost',{
         withCredentials:true
     }).then(async(res)=>{
      
@@ -57,7 +57,7 @@ const[eventlist,seteventlist]=useState({events:[]})
   
     setprofileloading1(true)
     
-      axios.get('https://hhbackend.onrender.com/post/neararea',{
+      axios.get('https://helping-hand-backend.onrender.com/post/neararea',{
         withCredentials:true
     }).then(async(res)=>{
      
@@ -83,7 +83,7 @@ const[eventlist,seteventlist]=useState({events:[]})
     setprofileloading2(true)
     
     
-      axios.get('https://hhbackend.onrender.com/post/nearstate',{
+      axios.get('https://helping-hand-backend.onrender.com/post/nearstate',{
         withCredentials:true
     }).then(async(res)=>{
      
@@ -107,7 +107,7 @@ const[eventlist,seteventlist]=useState({events:[]})
     console.log('zxn')
     setgeteventloading(true)
     
-      axios.get('https://hhbackend.onrender.com/events/geteventinarea',{
+      axios.get('https://helping-hand-backend.onrender.com/events/geteventinarea',{
         withCredentials:true
     }).then(async(res)=>{
      

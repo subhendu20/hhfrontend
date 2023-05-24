@@ -47,7 +47,7 @@ function Popupwindow() {
                   const post=(e)=>{
                     e.preventDefault()
                     console.log(formdata)
-                    axios.post('https://hhbackend.onrender.com/post/postnote', formdata, {
+                    axios.post('https://helping-hand-backend.onrender.com/post/postnote', formdata, {
                       withCredentials: true
                   }).then((res)=>{
                     console.log(res)
